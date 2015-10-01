@@ -1,0 +1,33 @@
+{{#if addNewListing}}
+
+<div>
+  <form>
+    <div class="form-group">
+      <label for="listingName">Name</label>
+      {{input value=listingName id="listingName"}}
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      {{input value=address id="address"}}
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      {{input value=phone id="phone"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <button {{action 'save' business}}>Save</button>
+  </form>
+</div>
+
+{{else}}
+<button {{action 'listingFormShow'}}>Add Listing</button>
+{{/if}}
+
+{{yield}}

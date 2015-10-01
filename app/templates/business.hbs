@@ -1,7 +1,16 @@
-<h2>More information about {{model.catName}}</h2>
+<h2> {{model.business.catName}}</h2>
 
 
+<ul>
+  <!-- businesslisting is referring to the key name created in the business route -->
+  {{#each model.business.listings as |listing|}}
+    {{listing-tile listing=listing}}
+  {{/each}}
+</ul>
 
-{{update-business business=model update="update"}}
+{{new-listing save='save' business=model.business}}
+
+
+<!-- {{update-business business=model update="update"}} -->
 <button {{action 'delete' business}}>Delete</button>
 {{outlet}}
