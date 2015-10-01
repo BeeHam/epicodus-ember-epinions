@@ -5,6 +5,7 @@ export default DS.Model.extend({
   address: DS.attr(),
   image: DS.attr(),
   phone: DS.attr(),
-  business: DS.belongsTo('business',{async:true})
-
+  business: DS.belongsTo('business',{async:true}),
+  latitude:DS.attr('number'),
+  longitude:DS.attr('number')
 });

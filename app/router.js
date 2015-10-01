@@ -9,6 +9,8 @@ Router.map(function() {
   this.route('contact');
   this.route('about');
   this.route('business',{path:'/business/:business_id'});
+  this.route('listinginfo',{path:'/listing/:listing_id'} );
+
 });
 
 export default Router;

@@ -13,6 +13,8 @@ export default Ember.Component.extend({
         address: this.get('address'),
         phone: this.get('phone'),
         image: this.get('image'),
+        latitude: this.get('latitude'),
+        longitude: this.get('longitude'),
         business: business
       };
 

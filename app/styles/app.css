@@ -2,6 +2,12 @@
   font-size: 2.5em;
 
 }
+
 .links{
   .pull-right();
+}
+
+.map-display {
+  height: 600px;
+  width: 600px;
 }
