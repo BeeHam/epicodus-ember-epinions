@@ -1,0 +1,17 @@
+
+<h3> Welcome to Epinions </h3>
+
+
+<ul>
+  {{#each model as |business|}}
+    {{business-tile business=business destroyBusiness="destroyBusiness" save="save"}}
+  {{/each}}
+</ul>
+
+
+{{new-business save="save"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+
+{{outlet}}

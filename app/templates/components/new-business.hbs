@@ -1,0 +1,23 @@
+
+{{#if addNewBusiness}}
+     <h1>New Business</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="catName">Owner</label>
+          {{input value=catName id="catName"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input value=image id="image"}}
+        </div>
+
+        <button {{action 'save'}}>Save</button>
+      </form>
+    </div>
+ {{else}}
+    <button {{action 'businessFormShow'}}>New Business</button>
+{{/if}}
+
+{{yield}}

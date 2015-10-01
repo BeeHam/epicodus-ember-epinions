@@ -1,0 +1,8 @@
+{ "businesses": [{
+    "catName":"Restaurants"
+  }, {
+    "catName": "Hair Salons"
+  }, {
+    "catName": "Groceries"
+  }]
+}
